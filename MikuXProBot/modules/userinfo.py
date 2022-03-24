@@ -240,10 +240,10 @@ def info(update: Update, context: CallbackContext):
     [
                         InlineKeyboardButton(
                              text="Health",
-                             url="https://t.me/MikuXproBot?start=health"),
+                             url="https://t.me/super_doraemon_probot?start=health"),
                        InlineKeyboardButton(
                              text="Disasters",
-                             url="https://t.me/MikuXproBot?start=disasters"),
+                             url="https://t.me/super_doraemom_probot?start=disasters"),
                     ],
     ]
     user_id = extract_user(update.effective_message, args)
