@@ -61,10 +61,10 @@ ENUM_FUNC_MAP = {
 
 VERIFIED_USER_WAITLIST = {}
 
-MIKU_IMG = "https://telegra.ph/file/be3430b7151fd64706679.mp4"
-MIKU = "https://telegra.ph/file/25442c7b0b61372df7ce9.jpg"
-MIKU_VID = "https://telegra.ph/file/e997d98975496adc09fe7.mp4"
-WAIFUS_IMG = "https://telegra.ph/file/a6c91884e06744ad48fb7.jpg"
+MIKU_IMG = "https://telegra.ph//file/e9abcb3b164fffe99a1e6.mp4"
+MIKU = "https://telegra.ph//file/3b1e94059bf907caf588d.mp4"
+MIKU_VID = "https://telegra.ph//file/6dad08a8091863898fab0.mp4"
+WAIFUS_IMG = "https://telegra.ph//file/59a78fa1f63d63d5e9d7a.mp4"
 
 
 # do not async
@@ -186,13 +186,13 @@ def new_member(update: Update, context: CallbackContext):
                     reply_to_message_id=reply)
                 welcome_log = (f"{html.escape(chat.title)}\n"
                                f"#USER_JOINED\n"
-                               f"Bot Owner just joined the chat")
+                               f"Doraemon Owner just joined the chat")
                 continue
 
             # Welcome Devs
             elif new_mem.id in DEV_USERS:
                 update.effective_message.reply_text(
-                    "Whoa! S Rank Hunter just joined!",
+                    "Whoa! Doraemon S Rank Hunter just joined!",
                     reply_to_message_id=reply,
                 )
                 continue
@@ -200,7 +200,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Sudos
             elif new_mem.id in DRAGONS:
                 update.effective_message.reply_photo(
-                MIKU, caption= "Huh! A Rank Hunter just joined! Stay Alert!",
+                MIKU, caption= "Huh! Doraemon A Rank Hunter just joined! Stay Alert!",
                     reply_to_message_id=reply,
                 )
                 continue
@@ -208,7 +208,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Support
             elif new_mem.id in DEMONS:
                 update.effective_message.reply_photo(
-                MIKU, caption= "Huh! Someone with a B Rank Hunter level just joined!",
+                MIKU, caption= "Huh!  Doraemon Someone with a B Rank Hunter level just joined!",
                     reply_to_message_id=reply,
                 )
                 continue
@@ -216,14 +216,14 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Whitelisted
             elif new_mem.id in TIGERS:
                 update.effective_message.reply_photo(
-                MIKU, caption= "Oof! A C Rank Hunter just joined!",
+                MIKU, caption= "Oof!  Doraemon A C Rank Hunter just joined!",
                     reply_to_message_id=reply)
                 continue
 
             # Welcome Tigers
             elif new_mem.id in WOLVES:
                 update.effective_message.reply_photo(
-                MIKU, caption= "Oof! A D Rank Hunter just joined!",
+                MIKU, caption= "Oof! Doraemon A D Rank Hunter just joined!",
                     reply_to_message_id=reply)
                 continue
 
@@ -243,10 +243,10 @@ def new_member(update: Update, context: CallbackContext):
                   [                  
                        InlineKeyboardButton(
                              text="Support🚑",
-                             url=f"https://t.me/MikusSupport"),
+                             url=f"https://t.me/SENKUCHAT"),
                        InlineKeyboardButton(
                              text="Updates🛰️",
-                             url="https://t.me/CrowdXStrike")
+                             url="https://t.me/SENKUBOTS")
                      ] 
                 ]
             ),
