@@ -3,8 +3,8 @@ import random
 from telegram import ParseMode
 from telethon import Button
 
-from ZeusXRobot import OWNER_ID, SUPPORT_CHAT
-from ZeusXRobot import telethn as tbot
+from MikuXProBot import OWNER_ID, SUPPORT_CHAT
+from MikuXProBot import telethn as tbot
 
 from ..events import register
 
