@@ -4,8 +4,8 @@ import asyncio
 import datetime
 
 from telethon.tl import functions, types
-from TG_ROBOT.events import register
-from TG_ROBOT import ubot, telethn
+from MikuXProBot.events import register
+from MikuXProBot import ubot, telethn
 
 
 async def is_register_admin(chat, user):
