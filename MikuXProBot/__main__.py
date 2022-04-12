@@ -56,11 +56,11 @@ def get_readable_time(seconds: int) -> str:
 buttons = [
     [
                         InlineKeyboardButton(
-                             text="💓add Doraemon",
-                             url="https://t.me/super_Doraemon_Probot?startgroup=true"),
+                             text="💓add gianic user bot",
+                             url="https://t.me/gianic3userbot?startgroup=true"),
                         InlineKeyboardButton(
                              text="🗞️ support",
-                             url="https://t.me/SENKUCHAT"),
+                             url="https://t.me/Gianicbotsupport"),
                     ],
                    [                  
                        InlineKeyboardButton(
@@ -86,7 +86,7 @@ For all command use /* [or](https://telegra.ph/file/282e8f1e28f091a18a6f6.jpg) *
     dispatcher.bot.first_name,""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\nKindly use ! for commands if / is not working\n")
 
-DONATE_STRING = """ contact my master 💓 @harshahero """
+DONATE_STRING = """ contact my master 💓 @Kakashi_Is_Hero """
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -214,10 +214,7 @@ def start(update: Update, context: CallbackContext):
                   [                  
                        InlineKeyboardButton(
                              text="🚑 Support",
-                             url=f"https://t.me/SENKUCHAT"),
-                       InlineKeyboardButton(
-                             text="🛰️ Updates",
-                             url="https://t.me/SENKUBOTS")
+                             url=f"https://t.me/Gianicbotsupport"),
                      ] 
                 ]
             ),
@@ -275,7 +272,7 @@ def help_button(update, context):
                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Back",
                                        callback_data="help_back"),
                   InlineKeyboardButton(text="Support",
-                                       url="t.me/SENKUCHAT")]]))
+                                       url="https://t.me/Gianicbotsupport")]]))
 
         elif prev_match:
             curr_page = int(prev_match.group(1))
@@ -329,12 +326,12 @@ def miku_callback_data(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="🌏 My Master", url="t.me/harshahero"),
+                    InlineKeyboardButton(text="🌏 My Master", url="t.me/Kakashi_Is_Hero"),
                     InlineKeyboardButton(text="✨ Try Inline", switch_inline_query_current_chat="",),
                  ],
                  [
-                    InlineKeyboardButton(text="🕊️ Updates", url="t.me/SENKUBOTS"),
-                    InlineKeyboardButton(text="🚑 Support", url="t.me/SENKUCHAT"),
+                    InlineKeyboardButton(text="🕊️ Updates", url="no updates"),
+                    InlineKeyboardButton(text="🚑 Support", url="https://t.me/Gianicbotsupport"),
                  ],
                  [
                     InlineKeyboardButton(text="❌ Back", callback_data="miku_back")
@@ -382,7 +379,7 @@ def get_help(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text=" Click here", url="https://t.me/super_Doraemon_Probot?start=help")
+                  InlineKeyboardButton(text=" Click here", url="https://t.me/gianic3userbot?start=help")
                   ]
                 ]
             ),
@@ -399,7 +396,7 @@ def get_help(update: Update, context: CallbackContext):
                 [[InlineKeyboardButton(text="Back",
                                        callback_data="help_back"),
                   InlineKeyboardButton(text="Support",
-                                       url="t.me/SENKUCHAT")]]))
+                                       url="https://t.me/Gianicbotsupport")]]))
 
     else:
         send_help(chat.id, HELP_STRINGS)
@@ -592,13 +589,13 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.send_message(f"@{SUPPORT_CHAT}", f"[I'm In Online]({MIKU_DISPACHER_PIC})", parse_mode=ParseMode.MARKDOWN,
+            dispatcher.bot.send_message(f"@Gianicbotsupport", f"[I'm In Online]({MIKU_DISPACHER_PIC})", parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [                  
                        InlineKeyboardButton(
                              text="[► Summon Me◄]",
-                             url="https://t.me/super_Doraemon_Probot?startgroup=true")
+                             url="https://t.me/gianic3userbot?startgroup=true")
                      ] 
                 ]
             ),
