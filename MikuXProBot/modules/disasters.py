@@ -40,7 +40,7 @@ def check_user_id(user_id: int, context: CallbackContext) -> Optional[str]:
     else:
         return None
 
-@mikucmd(command='addsudo')
+@comm(command='addsudo')
 @dev_plus
 @gloggable
 def addsudo(update: Update, context: CallbackContext) -> str:
